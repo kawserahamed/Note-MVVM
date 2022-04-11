@@ -1,12 +1,17 @@
 package org.primeit.googlenotes.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import org.primeit.googlenotes.R
+import androidx.appcompat.app.AppCompatActivity
+import org.primeit.googlenotes.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        var binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
     }
 }
