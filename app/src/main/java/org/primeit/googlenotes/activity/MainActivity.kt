@@ -1,7 +1,8 @@
-package org.primeit.googlenotes
+package org.primeit.googlenotes.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import org.primeit.googlenotes.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
