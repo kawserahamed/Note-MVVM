@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoogleNotes">
         <activity
+            android:name=".activity.UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddNote"
+            android:exported="false" />
+        <activity
             android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>

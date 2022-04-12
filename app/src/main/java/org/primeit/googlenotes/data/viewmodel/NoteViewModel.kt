@@ -1,4 +1,4 @@
-package org.primeit.googlenotes.data.ViewModel
+package org.primeit.googlenotes.data.viewModel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
@@ -12,8 +12,8 @@ import org.primeit.googlenotes.data.repository.NoteRepository
 
 class NoteViewModel(application: Application) : AndroidViewModel(application) {
 
-    val allNotes: LiveData<List<Note>>
-    val repository: NoteRepository
+     val allNotes: LiveData<List<Note>>
+     val repository: NoteRepository
 
     init {
         val dao = NoteDatabase.getDatabase(application).getNoteDao()
